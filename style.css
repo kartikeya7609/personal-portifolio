@@ -156,7 +156,7 @@ div p span a:hover::after{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin-left:80px; */
+    margin-left:80px; 
     }
 .about-col-1 img{
     width:100%;
@@ -165,6 +165,7 @@ div p span a:hover::after{
 }
 .about-col-2{
 place-items:center;
+margin-right:280px;
 }
 .tab-tittles{
     place-items:center
@@ -311,20 +312,20 @@ footer{
         border: none;
         cursor: pointer;
       }
-      .menu-icon {
-    visibility: visible;
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    font-size: 2rem;  
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    position: fixed;
-    top: 20px; 
-    right: 20px;
-    z-index: 100;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    .menu-icon {
+        visibility: visible;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        font-size: 2rem;  
+        padding: 10px;
+            border-radius: 10px;
+        cursor: pointer;
+        position: fixed;
+            top: 20px; 
+        right: 20px;
+        z-index: 100;
+        transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu-icon:hover {
@@ -349,7 +350,7 @@ footer{
 .sidebar.active {
     display: flex;
     flex-direction: column;
-    transform: translateX(0);  /* Move the sidebar into view */
+    transform: translateX(0);  
 }
 
 .sidebar ul {
@@ -376,6 +377,15 @@ footer{
 }
 
     }
+
+    @media screen and (max-width:768px){
+        .about-col-2{
+            margin:0;
+            }
+            img{
+                width:250px;
+            }
+    }
     @media screen and (max-width:451px){
         .img{
             width:300px;
@@ -385,7 +395,8 @@ footer{
             width: 270px;
             height: auto;
             place-content:initial;
+            margin: 0 ;
         }
-
+        
 
     }
