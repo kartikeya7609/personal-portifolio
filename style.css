@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Convergence&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bona Nova SC&display=swap");
 *,
 *::before,
 *::after{
@@ -9,9 +9,12 @@
 }
 body{
     color:#fff;
-    font-family: 'Convergence',sans-serif;
+    font-family: 'Bona Nova SC',sans-serif;
     font-size: 1.2rem;
-    border:2px solid black;
+    }
+.img{
+    width:600px;
+
 }
 .header{
     margin:0px;
@@ -148,7 +151,8 @@ div p span a:hover::after{
     width:100%;
 }
 .about{
-    background-color:rgba(0,0,0,0.9) ;
+    background-color:#000000;
+    opacity:0.9;
     width:100%;
 }
 .row{
@@ -159,7 +163,7 @@ div p span a:hover::after{
     margin-left:80px; 
     }
 .about-col-1 img{
-    width:100%;
+    width: 700px;
     border-radius:15px;
     margin-top:20px;
 }
@@ -219,7 +223,7 @@ margin-right:280px;
 }
 .smtg-one{
     width:200px;
-    height:200px;
+    height:auto;
     border-radius: 30px;
     background-color: #22333B;
     z-index: 10px;
@@ -231,8 +235,9 @@ margin-right:280px;
     display: flex;
     gap:100px;
     flex-direction: row;
+    justify-content:center;
     flex-wrap: wrap;
-
+    overflow:hidden;
 }
 footer{
     background-color: #0f0f0f;
@@ -242,11 +247,12 @@ footer{
     justify-content: space-around;
 }
 .icons{
-    width: 100%;
+    width: 60%;
     position:relative;
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:flex-start;
+    gap:20px;
     
 }
 .personal-portifolio{
@@ -284,6 +290,10 @@ footer{
     color:white;
     margin-top: 30px;
 
+}
+.img2{
+width:auto;
+height:100px;
 }
 .contact-me{
     color:bisque;
@@ -378,15 +388,96 @@ footer{
 
     }
 
-    @media screen and (max-width:768px){
-        .about-col-2{
-            margin:0;
-            }
-            img{
-                width:250px;
-            }
+@media screen and (max-width:525px) {
+    .about{
+        background-color:#83B5D1;
+        margin:0;
+        padding:0;
+        overflow-x: hidden; 
+        background-image: url("4.jpg");
     }
+}
+@media screen and (min-width:451px) and (max-width:768px){
+    body {
+        overflow-x: hidden; 
+      }  
+      .about{
+        background-image:url("5.png");
+        background-color:#83B5D1;    
+            margin:0;
+            padding:0;
+            overflow-x: hidden; background-size: cover; /* Ensures the image covers the section */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat;
+    }            
+    .header{
+        height: 90vh;
+        background-color:#673C4F;            
+    }
+    .about{
+        background-color:#83B5D1;
+        margin:0;
+        padding:0;
+        overflow-x: hidden; 
+        background-image: url("4.jpg");
+    }
+    .tab-tittles{
+        margin-left:0;
+    }
+    .row{
+        margin:0;
+    }
+    .img{
+        width:300px;
+        height:auto;
+    }
+    .smtg-one{
+        width: 270px;
+        height: auto;
+        place-content:initial;
+        margin: 0;
+    }
+    .pani-paata{
+        margin:0;
+        z-index:100;
+    }
+    .img1{
+        display:none;
+    }
+    .about-col-2{
+        object-fit: cover;
+        object-position: center;
+        width:auto;
+    }
+    .footer{
+       background-color:#7F557D;
+       width:100%;
+       font-size:6px;
+    }
+}
     @media screen and (max-width:451px){
+        body {
+            overflow-x: hidden; 
+          }
+          
+                    
+        .header{
+            height: 90vh;
+            background-color:#673C4F;            
+        }
+        .about{
+            background-color:#83B5D1;
+            margin:0;
+            padding:0;
+            overflow-x: hidden; 
+
+        }
+        .tab-tittles{
+            margin-left:0;
+        }
+        .row{
+            margin:0;
+        }
         .img{
             width:300px;
             height:auto;
@@ -395,8 +486,24 @@ footer{
             width: 270px;
             height: auto;
             place-content:initial;
-            margin: 0 ;
+            margin: 0;
         }
-        
-
+        .pani-paata{
+            margin:0;
+            z-index:100;
+        }
+        .img1{
+            display:none;
+        }
+        .about-col-2{
+            background-image: url("4.jpg");
+            object-fit: contain;
+            object-position: center;
+            width:auto;
+        }
+        .footer{
+           background-color:#7F557D;
+           width:100%;
+           font-size:6px;
+        }
     }
