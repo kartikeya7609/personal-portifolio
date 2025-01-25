@@ -13,13 +13,21 @@
     <div class="header" id ="header">
         <div class ="header-class">
         <nav>
-            <img src="Screenshot 2025-01-10 111520.png" alt="">
+            <img src="Screenshot 2025-01-10 111520.png"  class= "img" alt="">
+            <div class="toggle-menu">
+                <button class="menu-icon" onclick="toggleMenu()">☰</button>
+              
+                <div class="sidebar" id="sidebar">
+                 
         <ul>
+            <button class="fa-square-xmark" onclick="toggleSidebar()">✖</button>
+
                 <li><a href="#header">Home</a></li>          
                 <li><a href="#about">About</a></li>           
                 <li><a href="#portifolio">Portfolio</a></li>           
                 <li><a href="#contact">Contact</a></li>           
         </ul>
+    </div></div>
         </nav>
         <div class="header-text">
             <p class ="para-one"> <span><a href="index.html"> HTML,CSS </a></span>Designer</p>
@@ -42,7 +50,8 @@
                 </p>
                 <div class="tab-tittles">
                     <p class ="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p><p class="tab-links" onclick="opentab('clubpreferences')">clubpreferences</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('clubpreferences')">clubpreferences</p>
                 </div>
                 <div class="tab-contents active-tab" id ="Skills">
                     <ul>
@@ -54,7 +63,7 @@
                         <li>IEEE</li>
                         <li>GNU LINUX USERS GROUP</li>
                         <li> Radio-Nitroz</li>
-                        <li>Society for the Promotion of Indian Classical Music And Culture Amongst Youth (spic macay)</li>
+                        <li>Society for the Promotion of<br> Indian Classical Music And Culture<br> Amongst Youth (spic macay)</li>
                     </ul>                   
             </div> 
             <div class="tab-contents active-tab" id ="Education">
@@ -85,14 +94,22 @@
     <div class="contact-me" id="contact">
         <h1 class="sub-tittle">Contact Us</h1>
         <p style="margin-top: 20px ;">
-            Thank you for visiting my Website<br> @ Kartikeya<br> you can contact me through my mail which I connected in footer section<br>ph.no. 6301641669
+            Thank you for visiting my Website<br> @ Kartikeya<br> you can contact me through my mail which I connected in footer section<br>Ph.no. 6301641669
         </p>
     </div>
-    <footer>
-        <h2 class ="heading">Personal Portofolio</h2>
-        <i class="fa-brands fa-instagram fa-2x"></i> 
-        <i class="fa-brands fa-x-twitter fa-2x"></i>
-        <a href="mailto:kartikeyakk2007@gmail.com" class="fa-solid fa-square-envelope fa-2x"></a>    
+    <footer><div class="personal-portifolio">
+        <h2 style="
+        background: linear-gradient(to right,#4facfe, #38ef7d); 
+        -webkit-background-clip: text; 
+        background-clip: text;
+        -webkit-text-fill-color: transparent;" class="heading">
+       Personal portfolio</h2>
+    </div>
+    <div class="icons">
+        <a href="https://www.instagram.com/k_m_s_k_7?igsh=aHJ4OHZmbzA3dXZq" class="fa-brands fa-square-instagram fa-3x"></a>
+        <i class="fa-brands fa-x-twitter fa-3x"></i>
+        <a href="mailto:kartikeyakk2007@gmail.com" class="fa-solid fa-square-envelope fa-3x"></a>    
+    </div>
     </footer>
     <script src="index.js">       
     </script>
