@@ -117,16 +117,18 @@ nav ul li a:hover::after{
 }
 .para-one{
     color:bisque;
-    padding-left:80px;
-    font-size: 30px;
-    margin-top:10%
+    font-size: 1.5rem;
+    margin-top:10%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
 }
-.para-two{
-    color:#A9927D;
-    font-size:50px;
-    padding-left:50px;
-
-    
+p.para-two{
+    color:#f4f4f4;
+    font-size:2rem;
+    display:flex;
+    flex-direction:row;
+    align-content: center;    
 }
 div p span{
     color:#22333B;
@@ -240,25 +242,32 @@ margin-right:280px;
     overflow:hidden;
 }
 footer{
-    background-color: #0f0f0f;
     height: 125px;
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content: space-around;
 }
 .icons{
-    width: 60%;
+    width: 100%;
     position:relative;
+    background-color: rgba(0,0,0,0.8);
     display:flex;
     flex-direction:row;
-    justify-content:flex-start;
+    align-items:center;
+    justify-content: center;    
+}
+.icons1{
+    display: flex;
+    flex-direction: row;
     gap:20px;
-    
+
 }
 .personal-portifolio{
     width: 100%;
     position:relative;
     display:flex;
+    flex-direction: column;
+    background-color:rgba(15,15,15,0.9);
 
 }
 .heading{
@@ -275,21 +284,28 @@ footer{
     display:flex;
     flex-direction: row;
     margin-right:20px; 
+    font-size:30px;
 }.fa-square-instagram{
     text-decoration: none;
-    color:white;
+    font-size: 30px;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); /* Instagram gradient */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;         
 }
 .fa-brands.fa-x-twitter{
     display:flex;
     flex-direction: row;
     margin-right:20px; 
-
+    font-size:30px;
+    color:#18ffff
 }
 .fa-solid{
     text-decoration: none;
     color:white;
     margin-top: 30px;
-
+    font-size:25px;
+    color:cadetblue;
 }
 .img2{
 width:auto;
@@ -406,13 +422,15 @@ height:100px;
         background-color:#83B5D1;    
             margin:0;
             padding:0;
-            overflow-x: hidden; background-size: cover; /* Ensures the image covers the section */
-            background-position: center; /* Centers the image */
+            overflow-x: hidden; background-size: cover;
+            background-position: center; 
             background-repeat: no-repeat;
     }            
     .header{
         height: 90vh;
-        background-color:#673C4F;            
+        background-image: url("Flux_Dev_a_dramatic_hyperrealistic_3D_rendering_on_a_rich_velv_2.jpeg");
+        color: #f4f4f4; 
+
     }
     .about{
         background-color:#83B5D1;
@@ -444,26 +462,34 @@ height:100px;
     .img1{
         display:none;
     }
+    #portifolio{
+        background-image:url("6.jpg");
+
+    }
     .about-col-2{
         object-fit: cover;
         object-position: center;
         width:auto;
     }
     .footer{
-       background-color:#7F557D;
-       width:100%;
+        color: #dcdcdc;
+               width:100%;
        font-size:6px;
     }
+    
 }
     @media screen and (max-width:451px){
         body {
             overflow-x: hidden; 
           }
-          
+          h1, h2, h3 {
+            color: #ff6347;
+          }
                     
         .header{
             height: 90vh;
-            background-color:#673C4F;            
+            background-image: url("Flux_Dev_a_dramatic_hyperrealistic_3D_rendering_on_a_rich_velv_2.jpeg");
+            object-position: center;
         }
         .about{
             background-color:#83B5D1;
@@ -471,6 +497,29 @@ height:100px;
             padding:0;
             overflow-x: hidden; 
 
+        }
+        .para-two1{
+            display: flex;
+            flex-direction: row;
+            align-content:center;
+            justify-content: center;
+        
+        }
+        p.para-two{
+            width:200px;
+            height:auto;
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: row;
+            align-content:center;
+            justify-content: center;
+        }
+        #portifolio{
+            background-image:url("7.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            z-index:  -1;
         }
         .tab-tittles{
             margin-left:0;
@@ -487,10 +536,12 @@ height:100px;
             height: auto;
             place-content:initial;
             margin: 0;
+            z-index: 20;
         }
         .pani-paata{
             margin:0;
             z-index:100;
+            width:50%;
         }
         .img1{
             display:none;
@@ -502,8 +553,9 @@ height:100px;
             width:auto;
         }
         .footer{
-           background-color:#7F557D;
-           width:100%;
+
+            color: #dcdcdc;
+            width:100%;
            font-size:6px;
         }
     }
