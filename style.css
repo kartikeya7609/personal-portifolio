@@ -232,7 +232,6 @@ margin-right:280px;
     height:auto;
     border-radius: 30px;
     background-color: #22333B;
-    z-index: 10px;
     text-align: center;
 }
 .smtg{
@@ -581,7 +580,6 @@ img.img1{
             height: auto;
             place-content:initial;
             margin: 0;
-            z-index: 20;
         }
         .pani-paata{
             margin:0;
