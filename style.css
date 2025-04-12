@@ -259,71 +259,8 @@ margin-right:280px;
     flex-wrap: wrap;
     overflow:hidden;
 }
-footer{
-    height: 125px;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-around;
-}
-.icons{
-    width: 100%;
-    position:relative;
-    background-color: rgba(0,0,0,0.8);
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content: center;    
-}
-.icons1{
-    display: flex;
-    flex-direction: row;
-    gap:20px;
-
-}
-.personal-portifolio{
-    width: 100%;
-    position:relative;
-    display:flex;
-    flex-direction: column;
-    background-color:rgba(15,15,15,0.9);
-
-}
 .heading{
     padding: 30px 50px;
-}
-.pani-paata{
-    color: #f6fedb ;
-    font-size: 20px;
-    width:350px;
-    margin-left:50px;
-}
-.fa-brands{
-    margin-top: 30px;
-    display:flex;
-    flex-direction: row;
-    margin-right:20px; 
-    font-size:40px;
-}.fa-square-instagram{
-    text-decoration: none;
-    font-size:40px;
-    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); /* Instagram gradient */
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    background-clip: text;         
-}
-.fa-brands.fa-x-twitter{
-    display:flex;
-    flex-direction: row;
-    margin-right:20px; 
-    font-size:40px;
-    color:#18ffff
-}
-.fa-solid{
-    text-decoration: none;
-    color:white;
-    margin-top: 30px;
-    font-size:40px;
-    color:cadetblue;
 }
 .img2{
 width:auto;
