@@ -377,9 +377,9 @@ img.img1{
 
     }
 footer {
-    background-color: var(--bg-secondary);
+    background: linear-gradient(to right, #111, #222); /* New gradient background */
     padding: 4rem 2rem 2rem;
-    color: var(--text-primary);
+    color: white;
     border-top: 1px solid var(--border-color);
 }
 
